@@ -28,7 +28,7 @@ public class PrimosWS {
 
         // não é primo se for divisivel por qualquer número ímpar
         // que não 1 e ele mesmo
-        for (int i = 3; i < numero; i += 2) {
+        for (int i = 3; i < ((numero + 1) / 2); i += 2) {
             if ((numero % i) == 0) {
                 return false;
             }
